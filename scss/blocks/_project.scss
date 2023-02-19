@@ -11,10 +11,10 @@
         border-radius: 20px;
         height: 480px;
         align-items: center;
-        position: relative;
         .project__left {
             padding-left: 52px;
             max-width: 540px;
+            margin-right: 7px;
             .project__title {
                 font-style: normal;
                 font-weight: 700;
@@ -32,10 +32,82 @@
                 color: #FFFFFF;                
             }
         }
-        .project__img {
-            position: absolute;
-            right: 16px;
-            bottom: -87px;
+        .project__img-frame {
+            display: flex;
+            width: 495px;
+            height: 100%;
+            position: relative;
+            .project__img {
+                min-width: 335px;
+                position: absolute;
+                bottom: -87px;
+            }
         }
     }
 }
+
+// RESPONSIVE
+@media screen and (max-width: 1280px) {
+    .project {
+        margin-top: 17px;
+        margin-bottom: 78px;
+        .project_element {
+            transform: rotate(45deg);
+            margin: 0;
+            width: 90px;
+        }
+        .project__frame {
+            .project__img-frame {
+                display: flex;
+                justify-content: end;
+                .project__img {
+                    position: static;
+                }
+            }
+        }
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .project {
+        .project__frame {
+            flex-direction: column;
+            margin-top: 167px;
+            height: 100%;
+            .project__left {
+                order: 2;
+                margin: 0;
+                padding: 0 36px;
+                margin-bottom: 36px;
+                .project__title {
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 31px;
+                }
+                .project__text {  
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;            
+                }
+            }
+            .project__img-frame {
+                order: 1;
+                width: 335px;
+                height: 367px;
+                margin-bottom: 14px;
+                .project__img {
+                    position: absolute;
+                    top: -156px;
+                }
+            }
+        }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .project {
+        .project__frame {
+            .project__left {
+                padding: 0 24px;
+            }
+        }
+    }
+  }
