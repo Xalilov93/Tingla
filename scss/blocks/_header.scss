@@ -1,0 +1,143 @@
+.header {
+    position: relative;
+    margin-bottom: 122px;
+    .main__link {
+        margin-top: 60px;
+        margin-bottom: 154px;
+    }
+    .header_element1 {
+        position: absolute;
+        top: 0px;
+        right: 414px;
+    }
+    .intro {
+        display: flex;
+        align-items: center;
+        position: relative;
+        .intro__main {
+            max-width: 657px;
+            .intro_title {
+                max-width: 650px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 80px;
+                line-height: 95px;
+                color: #000000;
+                margin-bottom: 24px;
+            }
+            .intro__text {
+                max-width: 657px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 36px;
+                color: #000000;
+                margin-bottom: 69px;
+            }
+            .intro__btn {
+                background: #0F0F54;
+                border-radius: 8px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 24px;
+                letter-spacing: -0.01em;
+                color: #FFFFFF;
+                cursor: pointer;
+                padding: 18px 40px;
+                margin-bottom: 186px;
+            }
+        }
+
+        .intro__img {
+            position: absolute;
+            top: -168px;
+            right: -61px;
+            width: 514px;
+        }
+    }
+    .header_element2 {
+        position: absolute;
+        left: 78px;
+        bottom: 33px;
+    }
+    .header_element3 {
+        position: absolute;
+        right: 111px;
+        bottom: 0;
+    }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 1280px) {
+    .header {
+        position: relative;
+        margin-bottom: 122px;
+        .main__link {
+            margin-top: 60px;
+            margin-bottom: 154px;
+        }
+        .header_element1 {
+            position: absolute;
+            top: 0px;
+            right: 414px;
+        }
+        .intro {
+            display: flex;
+            align-items: center;
+            position: relative;
+            .intro__main {
+                max-width: 657px;
+                .intro_title {
+                    max-width: 650px;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 80px;
+                    line-height: 95px;
+                    color: #000000;
+                    margin-bottom: 24px;
+                }
+                .intro__text {
+                    max-width: 657px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 36px;
+                    color: #000000;
+                    margin-bottom: 69px;
+                }
+                .intro__btn {
+                    background: #0F0F54;
+                    border-radius: 8px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    letter-spacing: -0.01em;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                    padding: 18px 40px;
+                    margin-bottom: 186px;
+                }
+            }
+    
+            .intro__img {
+                position: absolute;
+                top: -168px;
+                right: -61px;
+                width: 514px;
+            }
+        }
+        .header_element2 {
+            position: absolute;
+            left: 78px;
+            bottom: 33px;
+        }
+        .header_element3 {
+            position: absolute;
+            right: 111px;
+            bottom: 0;
+        }
+    }
+}

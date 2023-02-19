@@ -1,0 +1,62 @@
+// @mixin line {
+//   position: fixed;
+//   width: 100%;
+//   height: 0;
+//   border: 1px solid rgba(0, 0, 0, 0.1);
+//   transform: rotate(90deg);
+//   z-index: -1;
+// }
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  
+  padding: 0;
+  // box-sizing: inherit;
+}
+
+body {
+  font-family: 'San Francisco Pro', 'sans-serif';;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 165px;
+  margin: 0 auto;
+}
+
+// RESPONSIVE
+@media screen and (max-width: 1280px) {
+  .container {
+      padding: 0 90px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+      padding: 0 55px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+      padding: 0 24px;
+  }
+}

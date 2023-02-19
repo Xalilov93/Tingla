@@ -1,0 +1,130 @@
+.pay {
+    position: relative;
+    margin-bottom: 244px;
+    .pay__frame {
+        display: flex;
+        background: #F9E0C7;
+        border-radius: 20px;
+        height: 480px;
+        align-items: center;
+        .pay__left {
+            padding-left: 61px;
+            max-width: 540px;
+            .pay__title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 60px;
+                letter-spacing: -0.01em;
+                color: #000000;
+                margin-bottom: 30px;
+            }
+            .pay__text {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 34px;
+                color: #000000;                
+            }
+        }
+        .pay__frame-img {
+            width: 412px;
+            height: 100%;
+            position: relative;
+            margin-right: 62px;
+            .pay__img {
+                min-width: 268px;
+                position: absolute;
+                left: 28px;
+                bottom: -81px;
+            }
+        }
+    }
+    .pay__element {
+        position: absolute;
+        right: 199px;
+        bottom: -166px;
+    }
+}
+
+// RESPONSIVE
+@media screen and (max-width: 1280px) {
+    .pay {
+        margin-bottom: 197px;
+        .pay__frame {
+            margin-bottom: 11px;
+            .pay__frame-img {
+                display: flex;
+                justify-content: end;
+                margin-right: 32px;
+                .pay__img {
+                    position: static;
+                    width: 268px;
+                }
+            }
+        }
+        .pay__element {
+            position: static;
+        }
+    }
+  }
+
+
+  @media screen and (max-width: 800px) {
+    .pay {
+        .pay__frame {
+            height: 100%;
+            flex-direction: column;
+            .pay__left {
+                order: 2;
+                padding: 0 40px;
+                margin-bottom: 36px;
+            }
+            .pay__frame-img {
+                order: 1;
+                width: 340px;
+                height: 473px;
+                position: relative;
+                padding: 0;
+                margin: 0;
+                .pay__img {
+                    width: 340px;
+                    position: absolute;
+                    top: -200px;
+                    left: 0;
+                }
+            }
+        }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .pay {
+        margin-bottom: 104px;
+        .pay__frame {
+            height: 100%;
+            flex-direction: column;
+            .pay__left {
+                order: 2;
+                padding: 0 40px;
+                margin-bottom: 36px;
+            }
+            .pay__frame-img {
+                order: 1;
+                width: 268px;
+                height: 473px;
+                position: relative;
+                padding: 0;
+                margin: 0;
+                .pay__img {
+                    width: 268px;
+                    position: absolute;
+                    top: -156px;
+                }
+            }
+        }
+        .pay__element {
+            position: static;
+            width: 81px;
+        }
+    }
+  }

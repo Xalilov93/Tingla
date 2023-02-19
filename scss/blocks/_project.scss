@@ -1,0 +1,41 @@
+.project {
+    margin-top: 109px;
+    margin-bottom: 226px;
+    .project_element {
+        margin-bottom: 82px;
+        margin-left: 344px;
+    }
+    .project__frame {
+        display: flex;
+        background: #0F0F54;
+        border-radius: 20px;
+        height: 480px;
+        align-items: center;
+        position: relative;
+        .project__left {
+            padding-left: 52px;
+            max-width: 540px;
+            .project__title {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 60px;
+                letter-spacing: -0.01em;
+                color: #FFFFFF;
+                margin-bottom: 30px;
+            }
+            .project__text {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 34px;
+                color: #FFFFFF;                
+            }
+        }
+        .project__img {
+            position: absolute;
+            right: 16px;
+            bottom: -87px;
+        }
+    }
+}
