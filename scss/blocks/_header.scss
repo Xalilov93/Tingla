@@ -1,4 +1,7 @@
 .header {
+    max-width: 1171px;
+    margin: 0 auto;
+    padding: 0 104px 0 165px;
     position: relative;
     margin-bottom: 122px;
     .main__link {
@@ -12,8 +15,6 @@
     }
     .intro {
         display: flex;
-        align-items: center;
-        position: relative;
         .intro__main {
             max-width: 657px;
             .intro_title {
@@ -26,7 +27,6 @@
                 margin-bottom: 24px;
             }
             .intro__text {
-                max-width: 657px;
                 font-style: normal;
                 font-weight: 400;
                 font-size: 24px;
@@ -35,6 +35,7 @@
                 margin-bottom: 69px;
             }
             .intro__btn {
+                border: 0;
                 background: #0F0F54;
                 border-radius: 8px;
                 font-style: normal;
@@ -45,15 +46,19 @@
                 color: #FFFFFF;
                 cursor: pointer;
                 padding: 18px 40px;
-                margin-bottom: 186px;
+                margin-bottom: 180px;
             }
         }
-
-        .intro__img {
-            position: absolute;
-            top: -168px;
-            right: -61px;
+        .intro__frame {
+            display: flex;
+            position: relative;
             width: 514px;
+            .intro__img {
+                min-width: 307px;
+                position: absolute;
+                top: -168px;
+
+            }
         }
     }
     .header_element2 {
@@ -69,51 +74,103 @@
 }
 
 // RESPONSIVE
-
 @media screen and (max-width: 1280px) {
     .header {
-        position: relative;
-        margin-bottom: 122px;
-        .main__link {
-            margin-top: 60px;
-            margin-bottom: 154px;
-        }
+        margin-bottom: 134px;
+        padding: 0 90px;
         .header_element1 {
-            position: absolute;
-            top: 0px;
-            right: 414px;
+            right: 300px;
+            left: auto;
         }
         .intro {
             .intro__main {
-                max-width: 657px;
                 .intro_title {
-                    margin-bottom: 24px;
+                    font-size: 36px;
+                    line-height: 43px;
                 }
                 .intro__text {
+                    font-size: 18px;
+                    line-height: 32px;
                     margin-bottom: 69px;
                 }
                 .intro__btn {
+                    padding: 18px 30px;
                     font-size: 18px;
                     line-height: 21px;
                 }
             }
-    
-            .intro__img {
-                position: absolute;
-                top: -168px;
-                right: -61px;
-                width: 514px;
+            .intro__frame {
+                .intro__img {
+                    min-width: 307px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        margin-bottom: 77px;
+        padding: 0 54px;
+        .main__link {
+            margin-top: 37px;
+            width: 113px;
+            margin-bottom: 5px;
+        }
+        .header_element1 {
+            width: 100px;
+            right: -9px;
+            top: 159px;
+        }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .intro__main {
+                order: 2;
+                .intro_title {
+                    margin-bottom: 16px;
+                }
+                .intro__text {
+                    margin-bottom: 28px;
+                }
+                .intro__btn {
+                    margin-bottom: 57px;
+                }
+            }
+            .intro__frame {
+                justify-content: center;
+                width: 100%;
+                order: 1;
+                .intro__img {
+                    position: static;
+                    width: 307px;
+                    margin-bottom: 11px;
+                }
             }
         }
         .header_element2 {
-            position: absolute;
-            left: 78px;
-            bottom: 33px;
+            width: 58px;
+            top: 338px;
+            left: 14px;
         }
         .header_element3 {
-            position: absolute;
-            right: 111px;
-            bottom: 0;
+            width: 49px;
+            right: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        padding-left: 24px;
+        .intro {
+            .intro__frame {
+                .intro__img {
+                    padding-left: 29px;
+                }
+            }
         }
     }
 }
